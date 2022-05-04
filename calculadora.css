@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: #F7F4FB;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    background-color: #F9FDF4;
+    box-shadow: 0px 2px 8px #00000070;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+a.cta {
+    background-color: #6dc740;
+    color: #ffffff;
+    padding: 16px 50px 16px 50px;
+    border-radius: 8px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 8px #00000070;
+    border: 2px solid #6dc740;
+}
+
+a.cta:hover {
+    background-color: #5dc12b;
+    border: 2px solid #343434;
+}
+
+.container_2 {
+    background-image: url(../calculadora_financeira/imgs_calculadora/back-\ cal.jpg);
+    background: cover !important;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    height: 750px;
+}
+
+.calc {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+    padding: 40p-x;
+}
+
+.card {
+    background-color: white;
+    height: 650px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 40px 40px 40px;
+    z-index: 1;
+    transition: 1s all ease-in-out;
+}
+
+.card.hide {
+    margin-right: 242px;
+    position: relative;
+    border-radius: 40px 0px 0px 40px;
+
+}
+
+.resultados_1 {
+    position: absolute;
+    right: 40%;
+    background-color: #6dc740;
+    height: 650px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 40px 40px 0px;
+    overflow: hidden;
+    z-index: 0;
+    transition: 1s right ease-in-out;
+}
+.div_avançar {
+    display: flex;
+    text-align: center;
+}
+
+.resultados_1.show {
+    right: 16.5%;
+}
+
+input {
+    border: 0px;
+    border-bottom: 1px solid #343434;
+    width: 80%;
+    margin-top: 0px;
+    font-size: 16px;
+    outline: 0px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    height: 70%;
+    width: 90%;
+}
+
+h4 {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.btn1 {
+    margin-top: 8px;
+    color: #ffffff;
+    padding: 16px 40px 16px 40px;
+    border-radius: 8px;
+    border: 2px solid #2C7DA2;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2C7DA2;
+    box-shadow: 2px 2px 8px #00000070;
+}
+
+.btn1:hover {
+    background-color: #156E98;
+}
+
+.resultado_avancar {
+    width: 80%;
+    font-size: 19px ;
+    padding: 90px;
+    color: white;
+}
+
+.resultado_avancar button {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 11%;
+}
+
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #F7F4FB;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #6dc740;
+    border: 2px solid #F7F4FB;
+    border-radius: 4px;
+}
